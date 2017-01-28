@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>    
+</head>
+<body>
+
+<table border="2" width="100%">
+    <tr>
+        <td width="25%">
+@await Component.InvokeAsync("MainMenu")
+            
+        </td>     
+        <td width="50%">
+            @RenderBody()
+
+        </td>
+
+        <td width="25%">
+            <footer>Footer rendered by _Layout</footer>
+
+        </td>
+
+    </tr>
+   
+</table>
+</body>
+</html>
